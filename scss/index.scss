@@ -1,0 +1,161 @@
+body {
+  background-image: url("../assets/bg-banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Asap', sans-serif;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: 'Flamenco', cursive;
+  color: black;
+}
+
+h3 {
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bold;
+
+}
+
+span {
+  font-weight: bold;
+}
+
+
+.menu {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  img {
+    width: 108px;
+  }
+  &__itens {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Asap', sans-serif;
+    font-size: 13px;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 30px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid yellow;
+  background-color: transparent;
+  color: yellow;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.box-btn {
+  margin-top: 25px;
+  padding: 40px;
+}
+.btn--primary {
+  padding: 10px 38px;
+  background-color: #FFDD71;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #8F7842;
+  font-weight: bold;
+  font-family: 'Asap', sans-serif;
+  font-size: 19px;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+  margin-bottom: 25px;
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Flamenco', cursive;
+  }
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  &__title{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Flamenco', cursive;
+    color: black;
+  }
+  img {
+    width: 100px;
+  }
+  &__content  {
+    color: #7A7A7A;
+    font-size: 17px;
+    margin-left: 50px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-around;
+  color: #686868;
+  line-height: 1.1;
+   img {
+    width: 125px;
+  }
+}
+
+.como-funciona{
+  margin-bottom: 100px;
+  &__title {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+}
+
+.nossos-servicos {
+  background-image: url("../assets/bg-servicos.png");
+  height: 550px;
+  img {
+    padding-bottom: 14px;
+    width: 140px;
+  }
+  &__title {
+    text-align: center;
+    padding-top: 50px;
+    padding: 30px;
+  }
+  &__card {
+    width: 400px;
+    height: 411px;
+    border-radius: 5px;
+    color: white;
+    background: #67BFD3;
+    margin-right: 60px;
+  }
+}
+
+.box-cards {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
