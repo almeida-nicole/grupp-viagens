@@ -33,7 +33,7 @@
           <li class="menu__item">Contato</li>
         </a>
         <div>
-          <a class="btn">Quero Agora!</a>
+          <a class="menu__btn">Quero Agora!</a>
         </div>
       </ul>
     </div>
@@ -48,7 +48,7 @@
       <p>Já sabe para onde vai? Nós também criamos roteiros personalizados, selecionando
         <br> os pontos turísticos e restaurantes mais apropriados para você.</p>
       <div class="box-btn">
-        <a class="btn--primary">Experimentar Agora</a>
+        <a class="btn">Experimentar Agora</a>
       </div>
     </div>
   </header>
@@ -105,7 +105,9 @@
             <br> melhores destinos do Brasil e do
             <br> mundo para a sua próxima viagem.
           </p>
-          <a class="btn--primary">Saber Mais</a>
+          <div class="box-btn">
+            <a class="btn">Saber Mais</a>
+          </div>
         </div>
         <div class="nossos-servicos__card">
           <h3>Roteiro</h3>
@@ -117,43 +119,69 @@
             <br> como montar o roteiro para cada
             <br> perfil de viajante.
           </p>
-          <a class="btn--primary">Saber Mais</a>
+          <div class="box-btn">
+            <a class="btn">Saber Mais</a>
+          </div>
+        </div>
+    </section>
+    <section class="voce-sabia">
+      <h2 class="voce-sabia__title">Você sabia que...</h2>
+
+      <div class="voce-sabia__conteudo container">
+        <div class="voce-sabia__item">
+          <h4 class="voce-sabia__item__title">80%</h4>
+          <p class="voce-sabia__item-info">É o que você economiza quando planeja uma viagem de antemão</p>
+        </div>
+        <div class="voce-sabia__item">
+          <h4 class="voce-sabia__item__title">50+</h4>
+          <p class="voce-sabia__item-info">Localidade diferentes nossos consultores conhecem o mundo inteiro</p>
+        </div>
+        <div class="voce-sabia__item">
+          <h4 class="voce-sabia__item__title">1000+</h4>
+          <p class="voce-sabia__item-info">Brasileiros viajaram no ano de 2016</p>
         </div>
       </div>
     </section>
-    <section class="banner">
-      <!-- <img src="assets/bg-numeros.png" alt=""> -->
-    </section>
-    <form>
-      <div>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome">
+
+    <form class="form">
+      <div class="container">
+        <h2 class="form__title"> Alguma Dúvida? Fale com a gente! </h2>
+
+        <div class="wrapp">
+          <div class="form__campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+          </div>
+          <div class="form__campo">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </div>
+        </div>
+
+        <div class="wrapp2">
+          <div class="form__campo-assunto">
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto">
+          </div>
+          <div class="form__text-area">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <button class="btn btn--secondary">Enviar</button>
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email">
-      </div>
-      <div>
-        <label for="assunto">Assunto</label>
-        <input type="text" id="assunto">
-      </div>
-      <div>
-        <label for="mensagem">Nome</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-      </div>
-      <button>Enviar</button>
     </form>
     <section class="newsletter">
       <h2 class="newsletter__title">Fique Ligado nas Novidades do Gruppe!</h2>
-      <div>
-        <input type="email">
-        <button>Começar agora</button>
+      <div class="newsletter__conteudo">
+        <input type="email" placeholder="Insira seu email">
+        <button class="btn btn--tertiary">Começar agora</button>
       </div>
     </section>
   </main>
-  <footer class="menu menu--dark">
-    <div>
-      <ul>
+  <footer class="footer">
+    <div class="menu-dark">
+      <ul class="menu-dark__itens">
         <li>Sobre</li>
         <li>Como funciona</li>
         <li>Roteiros</li>
@@ -161,16 +189,16 @@
         <li>Contato</li>
       </ul>
     </div>
-    <div>
+    <div class="menu-dark__logo">
       <a>
         <img src="assets/logo-footer.png" alt="logo-footer">
       </a>
       <p>Sharing Experiences </p>
-      <p>contato@grupper.com</p>
+      <p class="menu-dark__contato">contato@grupper.com</p>
     </div>
-    <div>
+    <div class="menu-dark__redes-sociais">
       <p>Siga-nos nas redes Sociais:</p>
-      <div>
+      <div class="menu-dark__redes-sociais__item">
         <a>
           <img src="assets/fb-icon.png" alt="icone facebook">
         </a>
@@ -180,10 +208,10 @@
           <img src="assets/" alt="icone youtube">
         </a>
       </div>
-      <div>
-        <p>Copyright</p>
-      </div>
+    </div>
   </footer>
+  <div class="copyright">
+    <p>Copyright</p>
+  </div>
 </body>
-
 </html>
