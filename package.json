@@ -1,0 +1,27 @@
+{
+  "name": "projeto-extra",
+  "version": "1.0.0",
+  "description": "Projeto extra do curso da {reprograma}",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almeida-nicole/gruppe-viagens.git"
+  },
+  "author": "Nicole Almeida <almeida-nicole@live.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almeida-nicole/gruppe-viagens/issues"
+  },
+  "homepage": "https://github.com/almeida-nicole/gruppe-viagens#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0",
+    "sass": "^1.17.2"
+  }
+}

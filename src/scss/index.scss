@@ -1,7 +1,4 @@
 body {
-  background-image: url("../assets/bg-banner.png");
-  background-repeat: no-repeat;
-  background-size: contain;
   font-family: 'Asap', sans-serif;
   color: white;
 }
@@ -30,33 +27,37 @@ span {
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+
   img {
     width: 108px;
   }
+
   &__itens {
     display: flex;
     text-transform: uppercase;
     font-size: 13px;
     align-items: center;
   }
+
   &__item {
     margin-right: 30px;
   }
-}
 
-.menu__btn {
-  cursor: pointer;
-  border: 1px solid yellow;
-  background-color: transparent;
-  color: yellow;
-  padding: 5px 10px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
+  &__link {
+    color: white;
+    &--btn {
+      border: 1px solid yellow;
+      background-color: transparent;
+      color: yellow;
+      padding: 5px 10px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
 
-.box-btn {
-  margin-top: 25px;
-  padding: 40px;
+    }
 }
 
 .btn {
@@ -67,15 +68,41 @@ span {
   color: #8F7842;
   font-weight: bold;
   font-size: 19px;
+  display: inline-block;
+  margin-top: 20px;
+
+  &--secondary {
+    background-color: #428F94;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+  }
+
+  &--tertiary {
+    background: #C1392B;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-family: 'Asap', sans-serif;
+    padding: 8px 70px;
+    margin-top: 0;
+  }
 }
 
-.header {
+
+.banner {
   text-align: center;
+  background-image: url(../assets/bg-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 560px;
   display: flex;
-  justify-content: center;
-  height: 500px;
   align-items: center;
-  margin-bottom: 25px;
+  justify-content: center;
+  flex-direction: column;
+
   &__title {
     font-size: 30px;
     text-transform: uppercase;
@@ -94,15 +121,18 @@ span {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+
   &__title{
     margin-bottom: 10px;
     font-size: 30px;
     font-family: 'Flamenco', cursive;
     color: black;
   }
+
   img {
     width: 100px;
   }
+
   &__content  {
     color: #7A7A7A;
     font-size: 17px;
@@ -117,6 +147,7 @@ span {
   justify-content: space-around;
   color: #686868;
   line-height: 1.1;
+
    img {
     width: 125px;
   }
@@ -124,6 +155,7 @@ span {
 
 .como-funciona{
   margin-bottom: 100px;
+
   &__title {
     text-align: center;
     padding-bottom: 25px;
@@ -132,48 +164,58 @@ span {
 
 .nossos-servicos {
   background-image: url("../assets/bg-servicos.png");
-  height: 550px;
+  padding: 45px 0 60px 0;
+
   img {
     padding-bottom: 14px;
     width: 140px;
   }
+
   &__title {
     text-align: center;
-    padding-top: 50px;
-    padding: 30px;
+    margin-bottom: 35px;
   }
+
+  &__box-cards {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
   &__card {
     width: 400px;
-    height: 411px;
+    min-height: 411px;
     border-radius: 5px;
     color: white;
     background: #67BFD3;
     margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.box-cards {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
 
 .voce-sabia {
   background-image: url("../assets/bg-numeros.png");
   background-size: cover;
-  height: 58vh;
+  padding-bottom: 60px;
+
   &__title {
     text-align: center;
     color: white;
     padding-top: 20px;
   }
+
   &__conteudo {
     display: flex;
     justify-content: space-evenly;
   }
+
   &__item {
     width: 21%;
     text-align: center;
+
     &__title {
       font-size: 50px;
       margin-bottom: 10px;
@@ -185,91 +227,93 @@ span {
 }
 
 .wrapp {
-  margin: 0 auto;
-  width: 50%;
   display: flex;
+  .col-50:first-child {
+    margin-right: 2%;
+  }
 }
 
-.wrapp2 {
-  margin: 0 auto;
+.col-50 {
   width: 50%;
 }
 
-.form {
+.contato {
   color: black;
   background: #F3F3F3;
   line-height: 1.4;
-  &__campo {
-    width: 49%
+  padding-bottom: 80px;
+  &__title {
+    width: 224px;
+    margin: 0 auto;
   }
+}
+
+.form {
+  width: 30%;
+  margin: 0 auto;
+  min-width: 380px;
+
   input, textarea {
     background-color: #FFEBB0;
     border: 1px solid rgb(185, 170, 124);
     display: block;
     border-radius: 1px;
-    height: 21px;
-    width: 92%;
+    padding: 0 5px;
+    width: 100%;
     line-height: 2;
   }
+
   textarea {
     height: 115px;
   }
-  &__title {
-    width: 25%;
-    margin: 0 auto;
-    padding: 30px;
-  }
 }
 
-.form__text-area {
-  padding-bottom: 70px;
-}
-
-.btn--secondary {
-  background-color: #428F94;
-  color: white;
-  width: 93%;
-  border: none;
-  padding: 6px;
-  margin-top: 20px;
-}
 
 .newsletter {
   background: #FFDD71;
-  padding-top: 30px;
-  height: 185px;
+  padding: 65px 0;
+
+  ::-webkit-input-placeholder {
+    color: #D6D6D6;
+  }
+
+  :-moz-placeholder {
+    color: #D6D6D6;
+  }
+
+  ::-moz-placeholder {
+    color: #D6D6D6;
+  }
+
+  :-ms-input-placeholder {
+    color: #D6D6D6;
+  }
+
   &__conteudo {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  &__title {
+    text-align: center;
+    font-size: 45px;
+  }
+
   input {
     width: 25%;
-    height: 30px;
     margin-right: 30px;
+    padding: 10px 15px;
+    font-family: 'Asap', sans-serif;
   }
 }
 
-.newsletter__title {
-  text-align: center;
-  font-size: 45px;
-}
-
-.btn--tertiary {
-  background: #C1392B;
-  border: none;
-  color: white;
-  font-weight: 500;
-  font-family: 'Asap', sans-serif;
-  padding: 8px 70px;
-}
 
 .footer {
   display: flex;
   justify-content: space-evenly;
   background: #333333;
-  height: 130px;
-  align-items: center;
+  padding: 20px 0;
 }
 
 .menu-dark__itens {
@@ -277,7 +321,6 @@ span {
   line-height: 1.2;
   font-family: 'Flamenco', cursive;
 }
-
 
 .menu-dark__logo img {
   width: 120px;
@@ -302,11 +345,8 @@ span {
 
 .menu-dark__redes-sociais__item {
   margin-top: 10px;
+
   img {
   width: 25px;
   }
 }
-
-
-
-

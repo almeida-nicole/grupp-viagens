@@ -7,60 +7,56 @@
   <title>Gruppe Viagens</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700|Flamenco" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-  <nav class="menu container">
-    <div>
-      <a>
-        <img src="assets/logo.png" alt="">
-      </a>
-    </div>
-    <div>
-      <ul class="menu__itens">
-        <a>
-          <li class="menu__item">Sobre</li>
-        </a>
-        <a>
-          <li class="menu__item">Como Funciona</li>
-        </a>
-        <a>
-          <li class="menu__item">Roteiros e Consultoria</li>
-        </a>
-        <a>
-          <li class="menu__item">Contato</li>
-        </a>
-        <div>
-          <a class="menu__btn">Quero Agora!</a>
-        </div>
-      </ul>
-    </div>
-  </nav>
-
   <header class="header">
-    <div>
-      <h1 class="header__title">
-        A viagem dos seus sonhos começa aqui!
-      </h1>
-      <p>Escolhemos os melhores destinos para você viajar!</p>
-      <p>Já sabe para onde vai? Nós também criamos roteiros personalizados, selecionando
-        <br> os pontos turísticos e restaurantes mais apropriados para você.</p>
-      <div class="box-btn">
-        <a class="btn">Experimentar Agora</a>
+    <nav class="menu container">
+      <div class="logo">
+        <a href="/">
+          <img src="assets/img/logo.png" alt="">
+        </a>
       </div>
-    </div>
+      <ul class="menu__itens">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Sobre</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Como Funciona</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Roteiros e Consultoria</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Contato</a>
+        </li>
+        <li>
+          <a class="menu__link menu__link--btn" href="#">Quero Agora!</a>
+        </li>
+      </ul>
+    </nav>
   </header>
+
+  <section class="banner">
+    <h1 class="banner__title">
+      A viagem dos seus sonhos começa aqui!
+    </h1>
+    <p>Escolhemos os melhores destinos para você viajar!</p>
+    <p>Já sabe para onde vai? Nós também criamos roteiros personalizados, selecionando
+      <br> os pontos turísticos e restaurantes mais apropriados para você.</p>
+    <a class="btn btn--banner">Experimentar Agora</a>
+  </section>
 
   <main class="main">
     <section class="sobre">
       <div>
-        <img src="assets/sobre-01.png" alt="terra com simbolo do gps">
+        <img src="assets/img/sobre-01.png" alt="terra com simbolo do gps">
       </div>
       <div class="sobre__content">
         <h2 class="sobre__title">O que é o Gruppe?</h2>
-        <p>Gruppe é um serviço de consultoria para todos os tipos de
+        <p>
+          <a href>Gruppe</a> é um serviço de consultoria para todos os tipos de
           <br> viajantes. Somos especializados em entender nossos
           <br> clientes e montar o roteiro levando em consideração o seu
           <br>perfil, quem vai com você, seu orçamento e outras
@@ -71,7 +67,7 @@
       <h2 class="como-funciona__title">Entendi! E como funciona?</h2>
       <div class="wrapper">
         <div>
-          <img src="assets/passo01.png" alt="">
+          <img src="assets/img/passo01.png" alt="">
           <p>
             <span>Você nos diz quem é!</span>
             <br> Se você gosta de aventura, se
@@ -79,14 +75,14 @@
             <br>tem para gastar etc.</p>
         </div>
         <div>
-          <img src="assets/passo-02.png" alt="">
+          <img src="assets/img/passo-02.png" alt="">
           <p>
             <span>Nós montamos o melhor roteiro</span>
             <br>que se encaixa com as suas
             <br> especificações.</p>
         </div>
         <div>
-          <img src="assets/passo-03.png" alt="">
+          <img src="assets/img/passo-03.png" alt="">
           <p>
             <span>Aproveite sua viagem</span>
             <br>ao máximo, sem perder horas
@@ -96,22 +92,20 @@
     </section>
     <section class="nossos-servicos">
       <h2 class="nossos-servicos__title">Nossos Serviços</h2>
-      <div class="nossos-servicos box-cards">
+      <div class="nossos-servicos__box-cards">
         <div class="nossos-servicos__card">
           <h3>Consultoria</h3>
-          <img src="assets/servicos-consultoria.png" alt="simbolo gps">
+          <img src="assets/img/servicos-consultoria.png" alt="simbolo gps">
           <p>Não sabe para onde viajar? A
             <br> consultoria visa selecionar os
             <br> melhores destinos do Brasil e do
             <br> mundo para a sua próxima viagem.
           </p>
-          <div class="box-btn">
-            <a class="btn">Saber Mais</a>
-          </div>
+          <a class="btn">Saber Mais</a>
         </div>
         <div class="nossos-servicos__card">
           <h3>Roteiro</h3>
-          <img src="assets/servicos-roteiros.png" alt="mala de viagem">
+          <img src="assets/img/servicos-roteiros.png" alt="mala de viagem">
           <p>Sua viagem está chegando, mas não
             <br> sabe o que visitar e onde comer? Nós
             <br> temos uma equipe de consultores
@@ -119,9 +113,7 @@
             <br> como montar o roteiro para cada
             <br> perfil de viajante.
           </p>
-          <div class="box-btn">
-            <a class="btn">Saber Mais</a>
-          </div>
+          <a class="btn">Saber Mais</a>
         </div>
     </section>
     <section class="voce-sabia">
@@ -143,34 +135,36 @@
       </div>
     </section>
 
-    <form class="form">
-      <div class="container">
-        <h2 class="form__title"> Alguma Dúvida? Fale com a gente! </h2>
+    <section class="contato">
+      <h2 class="contato__title"> Alguma Dúvida? Fale com a gente! </h2>
+      <form class="form">
 
         <div class="wrapp">
-          <div class="form__campo">
+          <div class="form__campo col-50">
             <label for="nome">Nome</label>
             <input type="text" id="nome">
           </div>
-          <div class="form__campo">
+          <div class="form__campo col-50">
             <label for="email">Email</label>
             <input type="email" id="email">
           </div>
         </div>
 
-        <div class="wrapp2">
-          <div class="form__campo-assunto">
-            <label for="assunto">Assunto</label>
-            <input type="text" id="assunto">
-          </div>
-          <div class="form__text-area">
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-            <button class="btn btn--secondary">Enviar</button>
-          </div>
+        <div class="form__campo">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto">
         </div>
-      </div>
-    </form>
+
+        <div class="form__campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        </div>
+        <button class="btn btn--secondary">Enviar</button>
+        </div>
+
+      </form>
+    </section>
+
     <section class="newsletter">
       <h2 class="newsletter__title">Fique Ligado nas Novidades do Gruppe!</h2>
       <div class="newsletter__conteudo">
@@ -191,7 +185,7 @@
     </div>
     <div class="menu-dark__logo">
       <a>
-        <img src="assets/logo-footer.png" alt="logo-footer">
+        <img src="assets/img/logo-footer.png" alt="logo-footer">
       </a>
       <p>Sharing Experiences </p>
       <p class="menu-dark__contato">contato@grupper.com</p>
@@ -200,12 +194,12 @@
       <p>Siga-nos nas redes Sociais:</p>
       <div class="menu-dark__redes-sociais__item">
         <a>
-          <img src="assets/fb-icon.png" alt="icone facebook">
+          <img src="assets/img/fb-icon.png" alt="icone facebook">
         </a>
       </div>
       <div>
         <a>
-          <img src="assets/" alt="icone youtube">
+          <img src="assets/img/" alt="icone youtube">
         </a>
       </div>
     </div>
@@ -214,4 +208,5 @@
     <p>Copyright</p>
   </div>
 </body>
+
 </html>
